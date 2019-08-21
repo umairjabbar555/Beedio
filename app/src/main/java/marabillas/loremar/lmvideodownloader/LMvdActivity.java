@@ -49,6 +49,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import marabillas.loremar.lmvideodownloader.bookmarks_feature.Bookmarks;
 import marabillas.loremar.lmvideodownloader.browsing_feature.BrowserManager;
@@ -123,7 +124,48 @@ public class LMvdActivity extends Activity implements TextView.OnEditorActionLis
         RecyclerView videoSites = findViewById(R.id.homeSites);
         videoSites.setAdapter(new VideoStreamingSitesList(this));
         videoSites.setLayoutManager(new LinearLayoutManager(this));
+
+
+        Intent intent = getIntent();
+
+        // Get the action of the intent
+        String action = intent.getAction();
+        // Get the type of intent (Text or Image)
+
+        String type = intent.getType();
+
+        // When Intent's action is 'ACTION+SEND' and Tyoe is not null
+
+        if (Intent.ACTION_SEND.equals(action) && type != null) {
+
+            // When tyoe is 'text/plain'
+
+            if ("text/plain".equals(type)) {
+
+                handleSendText(intent); // Handle text being sent
+
+            }
+
+        }
+
+
     }
+
+
+    private void handleSendText(Intent intent) {
+        // Get the text from intent
+        String sharedText = intent.getStringExtra(Intent.EXTRA_TEXT);
+
+        // When Text is not null
+        if (sharedText != null) {
+
+            // Show the text as Toast message
+            Toast.makeText(this, sharedText, Toast.LENGTH_LONG).show();
+            webBox.setText(sharedText);
+        }
+
+    }
+
 
     @Override
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -289,7 +331,7 @@ public class LMvdActivity extends Activity implements TextView.OnEditorActionLis
 
     public void setOnRequestPermissionsResultListener(ActivityCompat
                                                               .OnRequestPermissionsResultCallback
-                                                       onRequestPermissionsResultCallback) {
+                                                              onRequestPermissionsResultCallback) {
         this.onRequestPermissionsResultCallback = onRequestPermissionsResultCallback;
     }
 

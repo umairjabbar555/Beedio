@@ -27,12 +27,12 @@
     <application
         android:name=".LMvdApp"
         android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:fullBackupContent="@xml/backup_descriptor"
-        android:icon="@drawable/ic_launcher">
+        android:theme="@style/AppTheme">
         <activity
             android:name=".LMvdActivity"
             android:windowSoftInputMode="stateHidden">
@@ -76,6 +76,14 @@
                 <data android:host="vine.co" />
                 <data android:host="www.tumblr.com" />
             </intent-filter>
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
         </activity>
 
         <service
@@ -83,8 +91,8 @@
             android:exported="false" />
 
         <provider
-            android:authorities="marabillas.loremar.lmvideodownloader.fileprovider"
             android:name="android.support.v4.content.FileProvider"
+            android:authorities="marabillas.loremar.lmvideodownloader.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
