@@ -17,7 +17,7 @@
   ~     with this program; if not, write to the Free Software Foundation, Inc.,
   ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
   -->
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -26,8 +26,8 @@
 
     <ImageView
         android:id="@+id/videoSiteIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,12 +35,15 @@
 
     <TextView
         android:id="@+id/videoSiteTitle"
-        android:layout_width="wrap_content"
+        android:layout_below="@id/videoSiteIcon"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/videoSiteIcon"
         app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center_vertical" />
-</android.support.constraint.ConstraintLayout>
+         />
+</RelativeLayout>

@@ -33,6 +33,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
@@ -123,7 +124,7 @@ public class LMvdActivity extends Activity implements TextView.OnEditorActionLis
 
         RecyclerView videoSites = findViewById(R.id.homeSites);
         videoSites.setAdapter(new VideoStreamingSitesList(this));
-        videoSites.setLayoutManager(new LinearLayoutManager(this));
+        videoSites.setLayoutManager(new GridLayoutManager(this,3));
 
 
         Intent intent = getIntent();
