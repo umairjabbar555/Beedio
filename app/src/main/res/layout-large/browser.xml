@@ -27,7 +27,7 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/topBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
         android:background="@drawable/topbar_bg">
 
         <ImageView
@@ -235,6 +235,7 @@
         android:id="@+id/foundVideosWindow"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="gone"
         android:layout_margin="30dp">
 
         <android.support.v7.widget.RecyclerView

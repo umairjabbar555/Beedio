@@ -91,7 +91,7 @@ public class DownloadManager extends IntentService {
                     directotryExists = directory.exists() || directory.mkdir() || directory
                             .createNewFile();
                     if (directotryExists) {
-                        downloadNotifier.notifyDownloading();
+//                        downloadNotifier.notifyDownloading();
                         downloadFile = new File(Environment.getExternalStoragePublicDirectory(Environment
                                 .DIRECTORY_DOWNLOADS), filename);
                         if (connection != null) {
