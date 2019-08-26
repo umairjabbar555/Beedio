@@ -19,7 +19,7 @@
   -->
 
 <resources>
-    <string name="app_name">LM videodownloader</string>
+    <string name="app_name">Wave videodownloader</string>
     <string name="enter_web">Type URL or search</string>
     <string name="prev">Back</string>
     <string name="next">Next</string>
@@ -61,9 +61,9 @@
     <string name="search">Search</string>
     <string name="clear_history">Clear History</string>
     <string name="ad_blocker">Ad Blocker</string>
-    <string name="app_title">LM videodownloader</string>
-    <string name="about">LM videodownloader is a browser app for downloading videos
-        \n\nCopyright ©2018 Loremar Marabillas\n\nThis program is free software and licensed
-        under the GNU General Public License v2.0 </string>
+    <string name="app_title">Wave videodownloader</string>
+    <string name="about">Wave videodownloader is a browser app for downloading videos
+        \n\nCopyright ©2019 Umair Jabbar\n\nThis program is Paid software and licensed
+        under the GNU General Public License v2.0\n\n\n\n Email : umairjabbar555@gmail.com </string>
     <string name="try_these_sites">Try these sites</string>
 </resources>

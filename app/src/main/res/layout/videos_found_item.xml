@@ -21,7 +21,9 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingBottom="0dp"
+    android:layout_marginBottom="10dp">
 
     <TextView
         android:id="@+id/videoFoundSize"
@@ -51,6 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
         app:layout_constraintBottom_toBottomOf="@id/videoFoundCheck"
         app:layout_constraintStart_toEndOf="@id/videoFoundName"
         app:layout_constraintTop_toTopOf="@id/videoFoundCheck" />
@@ -67,6 +70,7 @@
         android:id="@+id/videoFoundExpand"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/videoFoundCheck">
 

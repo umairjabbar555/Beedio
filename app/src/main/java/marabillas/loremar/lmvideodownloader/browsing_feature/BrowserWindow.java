@@ -175,7 +175,7 @@ public class BrowserWindow extends LMvdFragment implements View.OnTouchListener,
             }
         });
 
-        TextView close = view.findViewById(R.id.closeWindow);
+        ImageView close = view.findViewById(R.id.closeWindow);
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

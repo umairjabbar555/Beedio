@@ -50,25 +50,24 @@ public class VideoStreamingSitesList extends RecyclerView.Adapter<VideoStreaming
     VideoStreamingSitesList(LMvdActivity activity) {
         this.activity = activity;
         sites = new ArrayList<>();
-        sites.add(new Site(R.drawable.favicon_youtube, "youtube", "https://m.youtube.com"));
-        sites.add(new Site(R.drawable.favicon_facebook, "facebook", "https://m.facebook.com"));
-        sites.add(new Site(R.drawable.favicon_instagram, "instagram", "https://www.instagram" +
+        sites.add(new Site(R.drawable.youtube, "youtube", "https://m.youtube.com"));
+        sites.add(new Site(R.drawable.facebook, "facebook", "https://m.facebook.com"));
+        sites.add(new Site(R.drawable.instagram, "instagram", "https://www.instagram" +
                 ".com"));
-        sites.add(new Site(R.drawable.favicon_twitter, "twitter", "https://mobile.twitter.com"));
-        sites.add(new Site(R.drawable.favicon_dailymotion, "dailymotion", "https://www" +
+        sites.add(new Site(R.drawable.twitter, "twitter", "https://mobile.twitter.com"));
+        sites.add(new Site(R.drawable.dailymotion, "dailymotion", "https://www" +
                 ".dailymotion.com"));
-        sites.add(new Site(R.drawable.favicon_veoh, "veoh", "https://www.veoh.com"));
-        sites.add(new Site(R.drawable.favicon_vimeo, "vimeo", "https://vimeo.com"));
-        sites.add(new Site(R.drawable.favicon_vk, "vk", "https://m.vk.com"));
-        sites.add(new Site(R.drawable.favicon_fc2, "fc2", "https://video.fc2.com"));
+        sites.add(new Site(R.drawable.veoh, "veoh", "https://www.veoh.com"));
+        sites.add(new Site(R.drawable.vimeo, "vimeo", "https://vimeo.com"));
+        sites.add(new Site(R.drawable.vk, "vk", "https://m.vk.com"));
         sites.add(new Site(R.drawable.favicon_vlive, "vlive", "https://m.vlive.tv"));
-        sites.add(new Site(R.drawable.favicon_naver, "naver", "https://m.tv.naver.com"));
-        sites.add(new Site(R.drawable.favicon_metacafe, "metacafe", "https://www.metacafe.com"));
-        sites.add(new Site(R.drawable.favicon_tudou, "tudou", "https://www.tudou.com"));
-        sites.add(new Site(R.drawable.favicon_youku, "youku", "https://m.youku.com"));
-        sites.add(new Site(R.drawable.favicon_myspace, "myspace", "https://myspace.com"));
-        sites.add(new Site(R.drawable.favicon_vine, "vine", "https://vine.co"));
-        sites.add(new Site(R.drawable.favicon_tumblr, "tumblr", "https://www.tumblr.com"));
+//        sites.add(new Site(R.drawable.favicon_naver, "naver", "https://m.tv.naver.com"));
+//        sites.add(new Site(R.drawable.favicon_metacafe, "metacafe", "https://www.metacafe.com"));
+//        sites.add(new Site(R.drawable.favicon_tudou, "tudou", "https://www.tudou.com"));
+        sites.add(new Site(R.drawable.youku, "youku", "https://m.youku.com"));
+//        sites.add(new Site(R.drawable.favicon_myspace, "myspace", "https://myspace.com"));
+        sites.add(new Site(R.drawable.vine, "vine", "https://vine.co"));
+        sites.add(new Site(R.drawable.tumblr, "tumblr", "https://www.tumblr.com"));
     }
 
     @NonNull
