@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <marabillas.loremar.lmvideodownloader.utils.CustomButton
+        <marabillas.loremar.wavevideodownloader.utils.CustomButton
             android:id="@+id/downloadsStartPauseButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -83,7 +83,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/historySearchBar" />
 
-    <marabillas.loremar.lmvideodownloader.utils.CustomButton
+    <marabillas.loremar.wavevideodownloader.utils.CustomButton
         android:id="@+id/clearHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

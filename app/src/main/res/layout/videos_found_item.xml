@@ -74,7 +74,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/videoFoundCheck">
 
-        <marabillas.loremar.lmvideodownloader.utils.CustomButton
+        <marabillas.loremar.wavevideodownloader.utils.CustomButton
             android:id="@+id/videoFoundRename"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -86,7 +86,7 @@
             app:layout_constraintEnd_toStartOf="@id/videoFoundDownload"
             app:layout_constraintTop_toTopOf="@id/videoFoundDownload" />
 
-        <marabillas.loremar.lmvideodownloader.utils.CustomButton
+        <marabillas.loremar.wavevideodownloader.utils.CustomButton
             android:id="@+id/videoFoundDownload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,7 +99,7 @@
             app:layout_constraintStart_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <marabillas.loremar.lmvideodownloader.utils.CustomButton
+        <marabillas.loremar.wavevideodownloader.utils.CustomButton
             android:id="@+id/videoFoundDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

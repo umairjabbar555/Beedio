@@ -96,7 +96,7 @@
         android:layout_marginStart="10dp"
         android:textColor="@android:color/black" />
 
-    <marabillas.loremar.lmvideodownloader.utils.CustomButton
+    <marabillas.loremar.wavevideodownloader.utils.CustomButton
         android:id="@+id/moveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

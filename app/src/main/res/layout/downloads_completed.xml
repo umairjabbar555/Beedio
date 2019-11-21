@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <marabillas.loremar.lmvideodownloader.utils.CustomButton
+        <marabillas.loremar.wavevideodownloader.utils.CustomButton
             android:id="@+id/clearAllFinishedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp" />
 
-        <marabillas.loremar.lmvideodownloader.utils.CustomButton
+        <marabillas.loremar.wavevideodownloader.utils.CustomButton
             android:id="@+id/goToFolder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

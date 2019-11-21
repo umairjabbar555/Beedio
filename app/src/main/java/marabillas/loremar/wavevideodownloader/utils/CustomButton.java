@@ -18,30 +18,19 @@
  *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package marabillas.loremar.wavevideodownloader.utils;
 
-buildscript {
-    
-    repositories {
-        google()
-        jcenter()
+import android.content.Context;
+import android.graphics.Color;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
+
+import marabillas.loremar.wavevideodownloader.R;
+
+public class CustomButton extends android.support.v7.widget.AppCompatTextView {
+    public CustomButton(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+        setBackground(getResources().getDrawable(R.drawable.rounded_button));
+        setTextColor(Color.BLACK);
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.2'
-        
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        jcenter()
-    }
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
 }

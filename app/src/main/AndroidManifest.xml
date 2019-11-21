@@ -19,13 +19,13 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="marabillas.loremar.lmvideodownloader">
+    package="marabillas.loremar.wavevideodownloader">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".LMvdApp"
+        android:name="marabillas.loremar.wavevideodownloader.LMvdApp"
         android:allowBackup="true"
         android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@drawable/ic_launcher"
@@ -34,7 +34,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LMvdActivity"
+            android:name="marabillas.loremar.wavevideodownloader.LMvdActivity"
             android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -87,12 +87,12 @@
         </activity>
 
         <service
-            android:name=".download_feature.DownloadManager"
+            android:name="marabillas.loremar.wavevideodownloader.download_feature.DownloadManager"
             android:exported="false" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="marabillas.loremar.lmvideodownloader.fileprovider"
+            android:authorities="marabillas.loremar.wavevideodownloader.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

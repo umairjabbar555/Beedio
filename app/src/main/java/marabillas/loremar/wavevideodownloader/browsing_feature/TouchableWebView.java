@@ -18,30 +18,40 @@
  *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package marabillas.loremar.wavevideodownloader.browsing_feature;
 
-buildscript {
-    
-    repositories {
-        google()
-        jcenter()
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.view.View;
+import android.webkit.WebView;
+
+/**
+ * Created by loremar on 3/21/18.
+ */
+
+public class TouchableWebView extends WebView implements View.OnTouchListener {
+    private float clickX, clickY;
+
+    public TouchableWebView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        setOnTouchListener(this);
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.2'
-        
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            clickX = event.getX();
+            clickY = event.getY();
+        }
+        return false;
     }
-}
 
-allprojects {
-    repositories {
-        google()
-        jcenter()
+    public float getClickX() {
+        return clickX;
     }
-}
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+    public float getClickY() {
+        return clickY;
+    }
 }

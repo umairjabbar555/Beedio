@@ -31,7 +31,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="marabillas.loremar.lmvideodownloader.LMvdActivity">
+        tools:context="marabillas.loremar.wavevideodownloader.LMvdActivity">
 
         <ImageButton
             android:id="@+id/go"
@@ -83,6 +83,7 @@
                 android:background="@drawable/edittext_background"
                 android:hint="@string/enter_web"
                 android:inputType="text"
+                android:elevation="10dp"
                 android:paddingLeft="10dp" />
         </LinearLayout>
 
@@ -129,7 +130,8 @@
             android:layout_height="0dp"
             android:background="@color/darkColor"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/menuLogoArea">
+            app:layout_constraintTop_toBottomOf="@id/menuLogoArea"
+            tools:ignore="MissingConstraints">
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="wrap_content"
@@ -150,7 +152,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/menu" />
 
-                <marabillas.loremar.lmvideodownloader.utils.NonScrollListView
+                <marabillas.loremar.wavevideodownloader.utils.NonScrollListView
                     android:id="@+id/menu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

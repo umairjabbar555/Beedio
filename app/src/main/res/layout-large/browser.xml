@@ -243,7 +243,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/videoList">
 
-            <marabillas.loremar.lmvideodownloader.utils.CustomButton
+            <marabillas.loremar.wavevideodownloader.utils.CustomButton
                 android:id="@+id/foundVideosQueue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -259,7 +259,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <marabillas.loremar.lmvideodownloader.utils.CustomButton
+            <marabillas.loremar.wavevideodownloader.utils.CustomButton
                 android:id="@+id/foundVideosDelete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -275,7 +275,7 @@
                 app:layout_constraintStart_toEndOf="@id/foundVideosQueue"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <marabillas.loremar.lmvideodownloader.utils.CustomButton
+            <marabillas.loremar.wavevideodownloader.utils.CustomButton
                 android:id="@+id/foundVideosClose"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -305,7 +305,7 @@
             app:layout_constraintTop_toTopOf="parent" />
     </android.support.constraint.ConstraintLayout>
 
-    <marabillas.loremar.lmvideodownloader.browsing_feature.TouchableWebView
+    <marabillas.loremar.wavevideodownloader.browsing_feature.TouchableWebView
         android:id="@+id/page"
         android:layout_width="0dp"
         android:layout_height="0dp"

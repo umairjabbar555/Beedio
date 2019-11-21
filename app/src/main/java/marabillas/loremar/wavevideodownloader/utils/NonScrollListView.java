@@ -18,30 +18,32 @@
  *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+package marabillas.loremar.wavevideodownloader.utils;
 
-buildscript {
-    
-    repositories {
-        google()
-        jcenter()
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.ViewGroup;
+import android.widget.ListView;
+
+public class NonScrollListView extends ListView {
+    public NonScrollListView(Context context) {
+        super(context);
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.2'
-        
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+    public NonScrollListView(Context context, AttributeSet attrs) {
+        super(context, attrs);
     }
-}
 
-allprojects {
-    repositories {
-        google()
-        jcenter()
+    public NonScrollListView(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
     }
-}
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+    @Override
+    public void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        int heightMeasureSpec_custom = MeasureSpec.makeMeasureSpec(
+                Integer.MAX_VALUE >> 2, MeasureSpec.AT_MOST);
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec_custom);
+        ViewGroup.LayoutParams params = getLayoutParams();
+        params.height = getMeasuredHeight();
+    }
 }
